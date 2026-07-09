@@ -1,0 +1,17 @@
+project:
+  id: stark
+  name: "Industrias Stark"
+  description: >
+    Proyecto de gestión y desarrollo tecnológico para Industrias Stark.
+    Garantiza el correcto etiquetado de prototipos de defensa y energía.
+  units:
+    armaduras:
+      prefix: "🤖"
+      label: "División de Armaduras"
+      is_default: true
+      keywords: [mark, armadura, reactor, arc, vuelo, propulsor, nanotecnología]
+    energia:
+      prefix: "⚡"
+      label: "Energía Limpia"
+      is_default: false
+      keywords: [energía, limpia, torre, red, suministro, batería]

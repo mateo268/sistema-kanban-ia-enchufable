@@ -1,0 +1,22 @@
+elastic_kanban_core:
+  version: "1.0"
+  purpose: >
+    Definir el estándar de tareas para los tableros Kanban de Elastic.
+    Establece categorías universales, estructura de tarjeta Trello
+    y reglas básicas de calidad para las tareas.
+  principles:
+    - "1 tarjeta = 1 entregable verificable"
+    - "La conversación y referencias viven dentro de la tarjeta"
+    - "El generador solo define la tarea, no asigna personas ni prioridades"
+    - "Las categorías describen tipo de trabajo, no estado"
+  output_schema:
+    format: json
+    json_shape:
+      project: "id del proyecto activo"
+      unit: "id de la unidad inferida"
+      unit_prefix: "emoji de la unidad"
+      title: "entregable claro y conciso, SIN el emoji"
+      category: "una de: strategy, design, communication, web_digital, operational"
+      objective: "1–2 frases explicando el propósito"
+      deliverable: "array de 3–6 strings, cada uno un criterio verificable"
+      notes: "array de strings con dependencias o información que falta (puede ir vacío)"
