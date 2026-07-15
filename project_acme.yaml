@@ -1,17 +1,7 @@
 project:
   id: acme
   name: "Corporación ACME"
-  description: >
-    Catálogo de productos avanzados para la Corporación ACME.
-    Mapea de forma precisa el inventario mecánico y explosivo del estudio.
   units:
-    explosivos:
+    default: 
       prefix: "🧨"
-      label: "Explosivos"
-      is_default: true
-      keywords: [tnt, dinamita, explosivo, detonador, mecha, pólvora]
-    trampas:
-      prefix: "🪤"
-      label: "Trampas y Mecanismos"
-      is_default: false
-      keywords: [trampa, yunque, cuerda, resorte, coyote, catapultas]
+      keywords: [acme, tnt, dinamita, explosivo, detonador, mecha, pólvora, trampa, yunque]
