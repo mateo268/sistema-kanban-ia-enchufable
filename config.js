@@ -1,4 +1,6 @@
-// VARIABLES DE CONFIGURACIÓN YAML (CORE + CLIENTES PORTFOLIO)
+// ============================================================
+// config.gs — Plantilla de configuración pública
+// ============================================================
 
 var YAML_CORE = `
 elastic_kanban_core:
@@ -47,8 +49,7 @@ project:
   id: acme
   name: "Corporación ACME"
   units:
-    explosivos: { prefix: "🧨", keywords: [tnt, dinamita, explosivo, detonador, mecha, pólvora] }
-    trampas: { prefix: "🪤", keywords: [trampa, yunque, cuerda, resorte, coyote, catapultas] }
+    default: { prefix: "🧨", keywords: [acme, tnt, dinamita, explosivo, detonador, mecha, pólvora, trampa, yunque] }
 `;
 
 var YAML_ELASTIC = `
@@ -62,4 +63,5 @@ project:
     quota: { prefix: "📊", keywords: [quota, cuota, límite, consumo] }
     eclipsemania: { prefix: "🌒", keywords: [eclipsemania, eclipse, astronomía] }
     management: { prefix: "⚙️", keywords: [management, gestión, interno, estudio, tarifas] }
+    marketing: { prefix: "♦️", keywords: [marketing, marca, 3lastic, web elastic, signal, linkedin, artículo, caso de estudio, captación, propuesta comercial] }
 `;
